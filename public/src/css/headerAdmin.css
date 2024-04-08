@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+  padding: 0;
+}
+.headerAdmin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../public/src/img/backgroundHeaderFooter.png');
+    background-color: #000;
+    height: 80px;
+  }
+  
+  .headerAdmin span {
+    margin: 0 10px;
+  }
+  
+  .headerAdmin a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+  }
+  
+  .headerAdmin a:hover {
+    background-color: #fff;
+    color: #000;
+  }

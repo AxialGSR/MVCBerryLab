@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration</title>
+</head>
+<body>
+<link rel="stylesheet" href="/public/src/css/administration.css">
+<!--Page du CRUD administration site-->
+<h2>Administration</h2>
+<div class="pageAdministration">
+    
+    <div class="adminFormation">
+        <h3>Mise à jour Admin</h3>
+        <div class="input">
+          
+          <form name="contact" methode="POST" action="admin.php" onload="traitementAdmin()">
+            <div class="input">
+                <label for="email">email : </label>
+                <input type="email" name="email" id="email" placeholder="Votre adresse email" required>
+            </div>
+            <div>
+                <label for="password">Mot de passe:</label>
+                <input type="password" name="password1" id="password1" placeholder="$resultat->email" required>
+            </div>
+            <div><label for="password">Répéter mot de passe:</label></div>
+            <div><input type="password" name="password2" id="password2" placeholder="password" required></div>
+            <div class="boutons" id="boutons">
+                <label for="admin" class="admin" id="admin">Sélection Admin:</label> 
+                <input type="number" name="idSelection" size="5" min="1" max="16" placeholder="Edition">
+                <button class="modif" type="submit" name="modif" id="submit" disabled="disabled">Modification</button>
+                <button class="creation" type="submit" name="creation" id="submit" disabled="disabled">Création</button>
+            </div>
+          </form>
+        </div>
+        <h3>Mise a jour Formation</h3>
+        <div class="input">
+            
+            <form name="formation" methode="POST" action="formation.php" onload="traitementFormation()" enctype="multipart/form-data">
+                <label for="libelleFormation">Formation:</label>
+                <br>
+                 <input type="text" name="libelleFormation" id="libelleFormation" placeholder="libelle de Formation">
+                <br>
+                <label class="photoFormation">
+                <br>
+                <input type="file" name="photoFormation" id="photoFormation" placeholder="Fichier photo" >
+                <br>
+                <label for="descriptionFormation" class="descriptionFormation" id="descriptionFormation">Description de la formation</label>
+                <br>
+                <textarea class = "descriptionFormation" name="descriptionFormation" id="descriptionFormation"></textarea>
+                     <div class="boutons" id="boutons">
+                        <label for="formation" class="formation" id="formation">Sélection outil:</label> 
+                        <input type="number" name="idSelection" size="5" min="1" max="16" placeholder="Edition">
+                        <br>
+                        <button class="modif" type="submit" name="modif" id="submit" disabled="disabled">Modification</button>
+                        <button class="creation" type="submit" name="creation" id="submit" disabled="disabled">Création</button>
+                    </div>
+            </form>
+        </div>
+        <br>
+    </div>
+    <div class="outilRealisation">
+        <h3>Mise a jour des outils</h3>
+        <br>
+        <div class="input">
+            
+            <form name="outil" methode="POST" action="outil.php" onload="traitementOutil()" enctype="multipart/form-data">
+                <label for="libelleOutil">Outil:</label>
+                <br>
+                <input type="text" name="libelleOutil" id="libelleOutil" placeholder="libelle de l'outil">
+                <br>
+                <label for="photoOutil">Fichier photo de l'outil:</label>
+                <br>
+                <input type="file" name="photoOutil" id="photoOutil" placeholder="Fichier photo de l'outil" >
+                 <br>
+                <label for="descriptionOutil" class="descriptionOutil" id="descriptionOutil">Description de l'Outil</label> 
+                <br>
+                <textarea class = "descriptionOutil" name="descriptionOutil" id="descriptionOutil"></textarea>
+                <br> 
+                <div class="boutons" id="boutons">
+                    <label for="outil" class="outil" id="outil">Sélection outil:</label> 
+                    <input type="number" name="idSelection" size="5" min="1" max="16" placeholder="Edition">
+                    <br>
+                    <button class="modif" type="submit" name="modif" id="submit" disabled="disabled">Modification</button>
+                    <button class="creation" type="submit" name="creation" id="submit" disabled="disabled">Création</button>
+                </div>
+            </form>
+        </div>
+        <h3>Mise a jour des réalisations</h3>  
+        <div class="input">
+            
+            <form name="realisation" methode="POST" action="realisation.php" onload="traitementRealisation()" enctype="multipart/form-data">
+                <label for="libellerealisation">Réalisation:</label>
+                <br>
+                <input type="text" name="libelleRealisation" id="libelleRealisation" placeholder="libelle de la realisation">
+                <br>
+                 <label for="photoRealisation">Fichier photo de la realisation:</label>
+                <br>
+                <input type="file" name="photoRealisation" id="photoRealisation" placeholder="Fichier photo de la realisation" >
+                <br>
+                <label for="descriptionRealisation" class="descriptionRealisation" id="descriptionRealisation">Description de la réalisation</label> 
+                <br>
+                <textarea class = "descriptionRealisation" name="descriptionRealisation" id="descriptionRealisation"></textarea>
+                <br>
+                <div class="boutons" id="boutons">
+                    <label for="Realisation" class="Realisation" id="Realisation">Sélection Réalisation:</label> 
+                    <input type="number" name="idSelection" size="5" min="1" max="16" placeholder="Edition">
+                     <br>
+                     <button class="modif" type="submit" name="modif" id="submit" disabled="disabled">Modification</button>
+                     <button class="creation" type="submit" name="creation" id="submit" disabled="disabled">Création</button>
+                </div>
+            </form>
+        </div>
+    <div>
+</div> 
+</body>
+</html>

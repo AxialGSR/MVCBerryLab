@@ -1,0 +1,23 @@
+<link href="src/output.css" rel="stylesheet">
+<footer class="">
+    <div class="container mx-auto flex flex-wrap justify-between items-center">
+        <div class="">
+            <a href="start.php">
+                <img src="img/1.png" alt="Logo">
+            </a>
+            <a href="start.php">
+                <div class="berryLab">BerryLab18</div>
+            </a>
+  
+            <div>          
+                <a href="mentions-legales.php" class="mentions">Mentions légales</a>
+            </div> 
+            
+    </div>
+    <div class="">
+        <button class="topButton">
+            <img src="../public/img/fleche.png" alt="bouton-haut-de-page">
+        </button>
+    </div>
+    <script src="src/js/hautPage.js"></script>
+</footer>

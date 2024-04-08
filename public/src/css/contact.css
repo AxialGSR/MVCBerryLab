@@ -1,0 +1,178 @@
+/*CSS du titre coté rappels Services*/
+.formations {
+    display:flex;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.6em;
+    font-weight: bold;
+    line-height: 1;
+    Justify-content: center;
+}
+/*CSS du titre coté Formulaire*/
+.contacts{
+    display:flex;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.6em;
+    font-weight: bold;
+    line-height: 1;
+    Justify-content: center;
+}
+/*CSS du titre de la zone de saisie commentaire*/
+.presentation{
+    display:flex;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    line-height: 1;
+    Justify-content: center;
+}
+/*Css interface Contact*/
+@media (min-width:800px){
+.pageForm{
+    display: flex;
+    align-items:left;
+    }}
+.presentationF{
+    display: grid;
+    position:relative;
+    background-color:#e5e7eb;
+    /*box-sizing:content-box;*/
+    border-radius:30px;
+    width: 100%;
+    height:700px;
+    border: solid #FFFFFF 10px;
+    padding:20px;
+     
+    }
+/*bouton de selection de rappel service*/
+/*Selecteur Formation*/
+.selecteurF {
+    display: grid;
+    align-items:left;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    border-radius:30px;
+    border: solid #1D1D1D 3px;
+    background-color:#FFFFFF;
+}
+/*Selecteur Outil*/
+.selecteurO {
+    display: grid;
+    align-items:left;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    border-radius:30px;
+    border: solid #1D1D1D 3px;
+    background-color:#FFFFFF;
+}
+/*Zone affichage image et text Formation ou Outils*/
+
+.affichage{
+    display:grid;
+    align-content:center;
+    background-color:#FFFFFF;
+    /*box-sizing:content-box;*/
+    border-radius:30px;
+    width: 95%;
+    height:360px;
+    border: solid #1D1D1D 3px; 
+    }
+    .affImageF{
+        margin-left:auto;
+        margin-right:auto;
+        padding:2px;
+        max-height: 100%;
+    }
+    .affTextF{
+        margin-left:auto;
+        margin-right:auto;
+        padding: 2px;
+        align-items:center;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        font-weight: bold;
+        line-height: 1;
+    }   
+    .affImageO{
+        margin-left:auto;
+        margin-right:auto;
+        padding:2px;
+        max-height: 100%;
+    }
+    .affTextO{
+        margin-left:auto;
+        margin-right:auto;
+        padding: 2px;
+        align-items:center;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        font-weight: bold;
+        line-height: 1;
+    }   
+
+/*Zone Formulaire */
+.formulaireC{
+    display:grid;
+    background-color:#e5e7eb;
+    /*box-sizing:content-box;*/
+    border-radius:30px;
+    width: 100%;
+    height: 700px;
+    border: solid #FFFFFF 10px;
+    padding:20px;
+}
+/*css texte identifiant*/
+.infoF{
+    display: grid;
+    align-items:left;
+    padding: 2px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1;
+}
+/*Zone de saisie du Formulaire*/
+.area{
+    width:100%;
+    height: 250px;
+    padding:20px 20px;
+    box-sizing: border-box;
+    border:3px solid #1D1D1D;
+    
+}
+/*Apparence des radios*/
+input[type="checkbox"] + label:before{
+    display: none;
+    content:'\2714';
+    font-size:20px;
+    padding-right:5px;
+  }
+  
+  input[type="checkbox"]:checked + label:before{
+    color: #000;
+  }
+
+/*Apparence du Bouton de soumission*/
+    .button{
+        display: inline-block;
+        padding:10px 10px;
+        font-size:17px;
+        text-align:center;
+        text-decoration:none;
+        border:4px solid #000000;
+        color:#1D1D1D;
+        border-radius:15px;
+        transition: bacground-color 0.3s, color 0.3s;
+        margin-left:70%; /* Position du Bouton*/
+    }
+    .button:hover {
+        background-color:#444444;
+        color:#FFFFFF;
+    } 
+/*Effacement de la flèche du selecteur*/
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
