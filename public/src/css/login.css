@@ -14,15 +14,14 @@ h2{
 }
 .inputLogin{
     width:400px;
-    height: 190px;
+    height: 250px;
     background-color: #000000;
     border-radius:10px;
     margin-right:auto; 
     margin-left:auto;
     padding: 20px;
 }
-#email, #password{
-    
+#nom, #prenom, #password{
     border-radius:10px;
     width: 80%;
     border: solid black 2px;

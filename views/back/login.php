@@ -8,16 +8,17 @@
   <div class="pageLogin"></div>
   <h2 class="login">Login</h2>
     <div class="inputLogin">
-        <form name="login" methode="POST" action="../controllers/administrateur.php">
-          <div class="labelAdmin"><label for="nom">Votre adresse email: </label></div>
-          <input type="email" name="" id="email" placeholder="votre email" required>
+        <form name="login" methode="POST" action="">
+          <div class="labelAdmin"><label for="nom">Votre Nom: </label></div>
+            <input type="text" name="nom" id="nom" placeholder="votre nom" required>
+          <div class="labelAdmin"><label for="prenom">Votre prenom: </label></div>
+           <input type="text" name="prenom" id="prenom" placeholder="votre prenom" required>
           <div class="labelAdmin"><label for="password">Mot de passe:</label></div>
-          <input type="password" name="password" id="password" placeholder="password" required>
-          <br>
+            <input type="password" name="password" id="password" placeholder="password" required>
           <div class="bouton" id="bouton">
             <button class="buttonAdmin" type="submit" name="submit" id="submit" disabled="disabled">Connexion</button>
+          </div>
         </form>
-        </div>
       </div>
 </body>
 <?php

@@ -26,6 +26,7 @@ if($_SERVER['REQUEST_METHOD'] == 'GET' || $_SERVER['REQUEST_METHOD'] == 'POST')
         break;
         // switch sur les action du Front en creation
         case 'addMembre': 
+            session_start();
             require('membre.php');
         break;
         // switch sur les action du front en edition
@@ -40,10 +41,12 @@ if($_SERVER['REQUEST_METHOD'] == 'GET' || $_SERVER['REQUEST_METHOD'] == 'POST')
         break;
         // switch sur les action du front en suppression
         case 'delMembre': 
+            session_start();
             require('membre.php');
         break;
         // switch sur les actions du front en Modification
         case 'majMembre': 
+            session_start();
             require('membre.php');
         break;
         // ecran d'acceuil

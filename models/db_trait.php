@@ -1,12 +1,11 @@
 <?php
 // variable de connection globale //
-trait PDO{
-    public function connexionBdd($hote,$user,$password,$db)
+require_once('../../config.php');
+trait PDO {
+    public function connexionBdd()
     {   
-        $user = 'root';
-        $password = '';
-        $dsn = 'mysql:dbname='.$db.';host='.$hote;
-        $dbh = new PDO($dsn,$user,$password);
+        $dsn = 'mysql:dbname=FabLab18'.DB_NAME.';host='.DB_HOST;
+        $dbh = new PDO($dsn,DB_USER,DB_PASSWORD);
         return $dbh;
     }
 }

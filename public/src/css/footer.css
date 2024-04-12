@@ -1,11 +1,12 @@
 .footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: 'src/img/backgroundHeaderFooter.png';
-    background-color: #000;
-    height: 100px;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../../img/backgroundHeaderFooter.png');
+  background-color: #7a7a7a;
+  height: 100px;
+}
+
   
 
 h3 {

@@ -1,5 +1,5 @@
 <?php
-require_once('../config.php');
+require_once('db_trait.php');
 
 class Formation
 {
@@ -11,7 +11,7 @@ class Formation
 
     public function __construct()
     {
-        $this->db = connexionBdd();
+        $this->db = $this->connexionBdd();
     }
 
     public function getNomFormation()

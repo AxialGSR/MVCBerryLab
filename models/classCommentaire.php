@@ -1,5 +1,5 @@
 <?php
-require_once('../config.php');
+require_once('db_trait.php');
 
 class Commentaire
 {
@@ -9,7 +9,7 @@ class Commentaire
 
     public function __construct()
     {
-        $this->db = connexionBdd();
+        $this->db = $this->connexionBdd();
     }
 
     public function getCommentaire()

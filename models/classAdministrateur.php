@@ -1,5 +1,5 @@
 <?php
-require_once('../config.php');
+require_once('db_trait.php');
 
 /**
  * @author Gilles SEYER <gilles.syr@hotmail.fr>
@@ -17,7 +17,7 @@ class Administrateur
 
     public function __construct()
     {
-        $this->db = connexionBdd(); // Assuming connexionBdd() function is in db_trait.php to get PDO connection
+        $this->db = $this->connexionBdd(); // Assuming connexionBdd() function is in db_trait.php to get PDO connection
     }
 
     public function getNomAdministrateur()

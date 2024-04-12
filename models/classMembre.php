@@ -1,6 +1,5 @@
 <?php
-require_once('../config.php');
-
+require_once('db_trait.php');
 class Membre
 {
     use PDO;
@@ -11,7 +10,7 @@ class Membre
 
     public function __construct()
     {
-        $this->db = connexionBdd();
+        $this->db = $this->connexionBdd();
     }
 
     public function getNomMembre()

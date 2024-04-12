@@ -11,8 +11,8 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('./public/src/img/backgroundHeaderFooter.png');
-    background-color: #000;
+    background-image: url('../../img/backgroundHeaderFooter.png');
+    background-color: #7b7a7a;
     height: 100px;
   }
   

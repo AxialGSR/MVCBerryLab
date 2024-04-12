@@ -6,12 +6,12 @@ switch ($_GET['action']) {
     case 'addAdministrateur':
         if ((!empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['password1'])&& !empty($_POST['password2'])) && (($_POST['password1'])==($_POST['password2']))){
             $administrateur = new Administrateur($_POST['nom'], $_POST['prenom'], $_POST['password1']);
-            $administrateur->creationAdministrateur();
+            $administrateur->creationAdministrateur($_POST['nom'], $_POST['prenom'], $_POST['password1']);
         }
         break;
     case 'editAdministrateur':
         if (isset($_GET['idSelection'])) {
-            $administrateur = Administrateur($_GET['idSelection']);
+            $administrateur = new Administrateur($_GET['idSelection']);
             if ($administrateur) {
                 $administrateur->editionAdministrateur($_POST['nom'], $_POST['prenom'], $_POST['password']);
             }
@@ -19,9 +19,9 @@ switch ($_GET['action']) {
         break;
     case 'delAdministrateur':
         if (isset($_GET['idSelection'])) {
-            $administrateur = Administrateur($_GET['idSelection']);
+            $administrateur = new Administrateur($_GET['idSelection']);
             if ($administrateur) {
-                $administrateur->suppressionAdministrateur();
+                $administrateur->suppressionAdministrateur($_POST['idSelection']);
             }
         }
         break;
@@ -29,7 +29,7 @@ switch ($_GET['action']) {
         if (isset($_GET['idSelection'])) {
             $administrateur = new Administrateur($_GET['idSelection']);
             if ($administrateur) {
-                $administrateur->modificationAdministrateur($_POST['nom'], $_POST['prenom'], $_POST['password']);
+                $administrateur->modificationAdministrateur($_POST['idSelection']);
             }
         }
         break;
